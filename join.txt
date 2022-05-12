@@ -28,7 +28,7 @@ INNER JOIN `degrees`
 ON `degrees`.`id` = `students`.`degree_id`
 INNER JOIN `departments`
 ON `departments`.`id` = `degrees`.`department_id`
-ORDER BY `students`.`surname` ASC, `students`.`name`;
+ORDER BY `students`.`surname`, `students`.`name`;
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 SELECT `degrees`.`name` AS "Corso di Laurea", `courses`.`name` AS "Corso", `teachers`.`surname` AS "Cognome", `teachers`.`name` AS "Nome"
